@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -11,7 +11,7 @@
   <ion-list color="success">
     <ion-item color="success">
       <ion-avatar slot="start">
-        <img src=""/>
+        <img src="https://cdn-icons-png.flaticon.com/512/4436/4436481.png"/>
       </ion-avatar>
       <ion-label>
         <h2>Hello</h2>
@@ -20,6 +20,31 @@
         </p>
       </ion-label>
     </ion-item>
-    
   </ion-list>
+    <ion-card>
+      <ion-header>
+        <ion-card-subtitle>Last Pick-up Call</ion-card-subtitle>
+      </ion-header>
+      <ion-card-content>
+        <ion-item lines="none">
+          <ion-icon name="hourglass-outline" slot="start" color="warning"></ion-icon>
+          <ion-label>
+            On Hold
+            <p>05/03/2023 22:45:00</p>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>
+            <p>Created at 05/02/2023</p>
+            <p>Notes: We have two bags that are full, one with plastic and the other with glasses.</p>
+          </ion-label>
+        </ion-item>
+        <ion-button expand="full" fill="clear" color="success">SEE ALL</ion-button>
+      </ion-card-content>
+    </ion-card>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button color="success">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
 </ion-content>
