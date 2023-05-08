@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar color="success">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -26,12 +26,12 @@
     <ion-header header>
       <ion-card-subtitle>Last Pick-up Call</ion-card-subtitle>
     </ion-header>
-    <ion-button expand="full" fill="clear" color="success" footer>SEE ALL</ion-button>
+    <ion-button expand="full" fill="clear" color="success" footer (click)="goToPickupCalls()">SEE ALL</ion-button>
   </app-pickup-call-card>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="success">
-      <ion-icon name="add"></ion-icon>
+      <ion-icon name="add" (click)="newPickupCall()"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 </ion-content>
